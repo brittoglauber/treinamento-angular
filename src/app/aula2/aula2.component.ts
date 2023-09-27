@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Aula2Component implements OnInit {
 
+  mensagem: string = ''
+  estilo: string = ''
+
   constructor() {
     console.log('constructor')
   }
@@ -22,6 +25,18 @@ export class Aula2Component implements OnInit {
 
   teste2(): void {
     console.log('on fucos')
+  }
+
+  onBotaoClicado(botao: string) {
+    if (botao === 'salvar') {
+      this.estilo = 'salvar';
+    }
+
+    if (botao === 'cancelar') {
+      this.estilo = 'cancelar';
+    }
+
+    this.mensagem = `Botão "${botao}" foi clicado!`
   }
 
 }

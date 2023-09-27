@@ -9,6 +9,13 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
 
-    <button type="button"(click)="teste()" class="btn btn-primary">Primary</button>
+    <div class="mb-3">
+      <app-botao (botaoClicado)="onBotaoClicado($event)"></app-botao>
+    </div>
+
+    <div class="mb-3 resposta-{{estilo}}">
+      <small>{{ mensagem }}</small>
+    </div>
+
   </div>
 </div>

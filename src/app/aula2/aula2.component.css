@@ -1,0 +1,11 @@
+.resposta-salvar {
+  width: 100%;
+  background-color: #77DD77;
+  border-radius: 5px;
+}
+
+.resposta-cancelar {
+  width: 100%;
+  background-color: #FF6961;
+  border-radius: 5px;
+}
